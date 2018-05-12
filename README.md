@@ -7,7 +7,7 @@
 
 ## Installation
 
-Clone the repository and open the index.html to start.
+Clone the repository and open the index.html to start, the results of tests are displayed at the bottom of the page.
 
 ## Tools Used
 
