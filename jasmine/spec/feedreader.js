@@ -94,6 +94,15 @@ describe('Initial Entries', function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
+         beforeEach(function(done) {
+                   loadFeed(0, done);
+               });
+
+               it('a single entry is present', function(){
+                   expect($('.feed .entry').length).not.toBe(0);
+               });
+
+          });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
 
@@ -102,5 +111,5 @@ describe('Initial Entries', function() {
          * Remember, loadFeed() is asynchronous.
          */
 
-         });
+
 }());
